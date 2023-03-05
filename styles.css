@@ -1,3 +1,31 @@
 body{
-    background: black !important;
+    background-color: #d40d84 !important;
+}
+nav{
+    height: 100px;
+    border: 1px solid black;
+    
+}
+
+#logo{
+    margin-top: 15px;
+    width: 300px;
+    justify-content: stretch;
+}
+
+#carousel{
+    margin-top: 20px;
+}
+img{
+    height: 600px;
+    width: 300px;
+    object-fit: contain;
+}
+.carousel-indicators li {
+    
+    background-color: black !important;
+}
+
+.carousel-indicators .active{
+    background-color: gray !important;
 }
