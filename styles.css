@@ -1,31 +1,135 @@
-body{
-    background-color: #d40d84 !important;
+body {
+  background-color: #b7719bc4 !important;
 }
-nav{
-    height: 100px;
-    border: 1px solid black;
-    
-}
-
-#logo{
-    margin-top: 15px;
-    width: 300px;
-    justify-content: stretch;
+/*NAVBAR*/
+nav {
+  height: 100px;
 }
 
-#carousel{
-    margin-top: 20px;
+#logo {
+  margin-top: 15px;
+  width: 300px;
+  justify-content: stretch;
+  transition: all 300ms;
 }
-img{
-    height: 600px;
-    width: 300px;
-    object-fit: contain;
+
+#logo:hover {
+  transform: scale(1.3);
+}
+nav div ul li a{
+    transition: all 300ms;
+}
+nav div ul li a:hover{
+    transform: scale(1.2);
+}
+#dropdown a:hover{
+    transform: scale(1.0);
+    background-color:#b7719bc4 !important;
+
+}
+/*END NAVBAR*/
+#carousel {
+  margin-top: 20px;
+}
+img {
+  height: 600px;
+  width: 300px;
+  object-fit: contain;
 }
 .carousel-indicators li {
-    
-    background-color: black !important;
+  background-color: black !important;
 }
 
-.carousel-indicators .active{
-    background-color: gray !important;
+.carousel-indicators .active {
+  background-color: gray !important;
 }
+
+/* SOCIAL MEDIA ICONS */
+.icons {
+  display: flex;
+  column-gap: 12px;
+  justify-content: right;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  vertical-align: middle;
+  position: fixed;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+  animation: shake 0.25s;
+}
+
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+.icon--instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5849 45%,
+    #d6249e 60%,
+    #2859eb 90%
+  );
+  outline-color: #a02d76;
+}
+.icon--meta:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+.icon--whatsapp:hover {
+  background-color: #0c6614;
+  outline-color: #2ea44f;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+aside {
+  justify-content: right;
+  border: 10px 0px;
+  padding-right: -10px;
+  position: fixed;
+  left: 98%;
+  z-index: 4;
+}
+#insta {
+  margin-top: -7px;
+  top: 40%;
+  z-index: 4;
+}
+
+#meta {
+  margin-top: 10px;
+  top: 45%;
+  z-index: 4;
+  object-fit: fill;
+}
+#whatsapp {
+  margin-top: 25px;
+  top: 50%;
+  z-index: 4;
+}
+
+/* SOCIAL MEDIA ICONS */

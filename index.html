@@ -10,9 +10,9 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body >
     <!--NAVBAR WITH THE LOGO-->
-           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <nav class="navbar navbar-expand-lg navbar-light">
             <img id="logo" src="./img/vanita_negativo.png" class="navbar-brand" href="#">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -30,25 +30,24 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                  <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Productos</a>
+                    <a class="dropdown-item" href="#">Descuentos</a>
+                    <a class="dropdown-item" href="#">Kits</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Contacto</a>
                   </div>
                 </li>
                 </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
           </nav>
-            </ul>
-        </nav>
-        <!--END OF NAVBAR-->
+       <!--END OF NAVBAR-->
         <!--Carousel-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -75,8 +74,25 @@
             </a>
           </div>
         <!-- End Carousel-->
-   
-
+          <!--SOCIAL MEDIA ICONS-->
+          <div>
+              <aside id="insta" onclick="instaLink()" class="icons">
+                <img src="./img\instagram.png" class="icon icon--instagram" alt="intagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </aside>
+            <aside id="meta" class="icons">
+                <img src="./img/meta.png" class="icon icon--meta" alt="meta">
+                    <i class="ri-meta-line"></i>
+                </a>
+            </aside>
+            <aside id="whatsapp" onclick="whatsappLink()" class="icons">
+                <img src="./img/whatsapp.png" class="icon icon--whatsapp" alt="whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </aside>
+            </div>
+          <!-- END SOCIAL MEDIA ICONS-->
 
 
 
