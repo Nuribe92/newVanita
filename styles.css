@@ -14,18 +14,29 @@ nav {
 }
 
 #logo:hover {
-  transform: scale(1.3);
+  transform: scalex(1.3);
+}
+nav div ul li{
+  margin-left: 40px;
+  font-size: 17px;
+  font-weight: bold;
 }
 nav div ul li a{
     transition: all 300ms;
 }
 nav div ul li a:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 #dropdown a:hover{
     transform: scale(1.0);
     background-color:#be91acc4 !important;
 
+}
+#search input{
+  font-size: 17px;
+}
+#search button{
+  font-size: 17px;
 }
 /*END NAVBAR*/
 /*CAROUSEL*/
@@ -36,6 +47,10 @@ nav div ul li a:hover{
   height: 600px;
   width: 300px;
   object-fit: contain;
+  transition: all 300ms;
+}
+#carousel div img:hover{
+  transform: scalex(1.2);
 }
 .carousel-indicators li {
   background-color: #fff !important;
