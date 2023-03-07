@@ -157,3 +157,18 @@ aside {
 }
 
 /* SOCIAL MEDIA ICONS */
+
+/*VIDEOS*/
+#title{
+  display: flex;
+  margin-left: 220px;
+  justify-content: center;
+   align-self: center;
+}
+#video1{
+  margin-left: 200px;
+  height: 800px;
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 1px 0px 5px black;
+}
