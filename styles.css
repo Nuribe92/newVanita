@@ -186,3 +186,25 @@ aside {
   border-radius: 12px;
   box-shadow: 1px 0px 5px black;
 }
+#moretutorials{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+    
+}
+
+#moretutorials > button{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-self: center;
+  margin: 20px auto;
+  border-radius: 20px !important
+  }
+
+  #moretutorials > button > p{
+    align-self: center;
+    margin: auto;
+    font-size: 30px;
+  }
