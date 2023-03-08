@@ -159,16 +159,30 @@ aside {
 /* SOCIAL MEDIA ICONS */
 
 /*VIDEOS*/
-#title{
+#title1{
   display: flex;
-  margin-left: 220px;
+  margin-left: 115px;
+  justify-content: center;
+   align-self: center;
+}
+#title2{
+  display: flex;
+  margin-left: 390px;
   justify-content: center;
    align-self: center;
 }
 #video1{
   margin-left: 200px;
   height: 800px;
-  width: 600px;
+  width: 450px;
+  border-radius: 12px;
+  box-shadow: 1px 0px 5px black;
+}
+#video2{
+  margin-top: 100px;
+  margin-left: 200px;
+  height: 450px;
+  width: 800px;
   border-radius: 12px;
   box-shadow: 1px 0px 5px black;
 }
