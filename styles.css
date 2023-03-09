@@ -40,6 +40,20 @@ nav div ul li a:hover{
 }
 /*END NAVBAR*/
 /*CAROUSEL*/
+#imgbg{
+  margin-top: 40px;
+  position: absolute;
+  background: url("./img/imagendefondo2.jpg.crdownload");
+  object-fit: cover;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  -webkit-filter: blur(18px);
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  }
 #carousel {
   margin-top: 20px;
 }
@@ -159,23 +173,29 @@ aside {
 /* SOCIAL MEDIA ICONS */
 
 /*VIDEOS*/
-#tutorials{
+#imgbgvideos{
+  margin-top: 40px;
+  position: absolute;
   background: url("./img/imagendefondo2.jpg.crdownload");
+  object-fit: cover;
   background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
   filter: blur(8px);
-  -webkit-filter: blur(8px);
-  z-index: 1;
-}
-#tutorials div{
-  z-index: 2;
-}
+  -webkit-filter: blur(6px);
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  }
 #title1{
+  color: #fff;
   display: flex;
   margin-left: 115px;
   justify-content: center;
    align-self: center;
 }
 #title2{
+  color: #fff;
   display: flex;
   margin-left: 390px;
   justify-content: center;
@@ -201,7 +221,7 @@ aside {
   width: 100%;
   justify-content: end;
   align-items: center;
-    
+   z-index: 1; 
 }
 
 #moretutorials > button{
