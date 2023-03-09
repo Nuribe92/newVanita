@@ -159,6 +159,16 @@ aside {
 /* SOCIAL MEDIA ICONS */
 
 /*VIDEOS*/
+#tutorials{
+  background: url("./img/imagendefondo2.jpg.crdownload");
+  background-size:cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: 1;
+}
+#tutorials div{
+  z-index: 2;
+}
 #title1{
   display: flex;
   margin-left: 115px;
