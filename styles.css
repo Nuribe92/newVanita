@@ -179,7 +179,7 @@ aside {
   background: url("./img/imagendefondo2.jpg.crdownload");
   object-fit: cover;
   background-size:cover;
-  background-position: center;
+  background-position: -200px -200px;
   background-repeat: no-repeat;
   filter: blur(8px);
   -webkit-filter: blur(6px);
