@@ -118,6 +118,9 @@ nav div ul li a:hover{
 }
 /*END NAVBAR*/
 /*CAROUSEL*/
+#carouselExampleIndicators{
+  height: 80vh
+}
 #imgbg{
   margin-top: 5px;
   position: absolute;
