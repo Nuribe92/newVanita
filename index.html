@@ -32,10 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Novedades</a>
+                  <a class="nav-link" href="#videoSeccion">Turoriales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contactanos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,7 +62,7 @@
           <hr>      
        <!--END OF NAVBAR-->
         <!--Carousel-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
          <!-- <img id="imgbg" src="./img/Imagendefondo1.jpg">-->
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -124,30 +127,34 @@
             </div>
           <!-- END SOCIAL MEDIA ICONS-->
           <hr>
-          <!--VIDEO TUTORIALS-->    
-          <div class="row h-50 col-12 ">
+          <!--VIDEO TUTORIALS-->  
+          
+          <div id="videoSeccion" class="container row col-12">
+            <h1 class="col-12 text-center">TURORIALES</h1>
            <!-- <img id="imgbgvideos" src="./img/imagendefondo2.jpg">-->
-            <div class="col-5 h-30 mt-5 pt-5">
-              <h1 id="title1" class="text-black">Tutorial Delineado de gato</h1>
+            <div class="col-5 text-center mx-auto">
+              <h1 id="title1" class="text-black mx-auto">Tutorial Delineado de gato</h1>
               <video id="video1"  controls>
                 <source src="./img/delineadorcat_.mp4" type="video/mp4"> 
               </video>
             </div>
-            <div class="col-5 mt-5 pt-5">
-              <h1 id="title2">Tutorial Siren eyes</h1>
+            <div class="col-5  text-center mx-auto">
+              <h1 id="title2" class="mx-auto">Tutorial Siren eyes</h1>
               <video id="video2"  controls>
                 <source src="./img/Maquillaje de Ojos (SIREN EYES).mp4" type="video/mp4"> 
               </video>
-            </div>
-            <div id="moretutorials">
-              <button class="btn btn-dark">
+              <div id="moretutorials" class="mt-5">
+              <button class="btn my-auto w-100">
                 <p>Ver mas tutoriales</p>
+            </div>
+            
               </button>
             </div>
-          </div>   
+          </div>
+          <hr>
           <!--END VIDEO TUTORIALS-->
           <!--FOOTER-->
-          <div class="container-fluid row m-1 ">
+          <div id="contact" class="container-fluid row m-1 ">
             <div id="footer" class="row col-12">
                 <img class="" id="lupa" src="./img/lupa-b.png" alt="lupa">
                 <svg id="clipboard" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check col-4" viewBox="0 0 16 16">
