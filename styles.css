@@ -124,7 +124,7 @@ nav div ul li a:hover {
 /*END NAVBAR*/
 /*CAROUSEL*/
 #carouselExampleIndicators {
-  height: 80vh;
+  height: 82vh;
 }
 #imgbg {
   margin-top: 5px;
@@ -258,8 +258,23 @@ aside {
   z-index: 4;
 }
 
-/* SOCIAL MEDIA ICONS */
+/*END SOCIAL MEDIA ICONS */
+/*BOTONES GENERALES*/
 
+#return-top  {
+  border-radius: 20px !important;
+} 
+#return-top {
+  color:#d6249e;
+  font-size: 25px;
+}
+
+#return-top:hover{
+  background-color:#a40060 ;
+  color: white;
+  border: 1px solid #a40060;
+}
+/*FIN BOTONES GENERALES*/
 /*VIDEOS*/
 #videoSeccion{
   margin-bottom: 110px;
