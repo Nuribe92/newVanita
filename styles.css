@@ -332,7 +332,7 @@ hr{
 section{
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 88vh;
 }
 section  img{
   width: 450px;
@@ -340,8 +340,7 @@ section  img{
   object-fit: cover;
   opacity: 0.8;
   transition: 2s ease;
- 
-  flex-wrap: nowrap;
+   flex-wrap: nowrap;
 }
 section img:hover{
   cursor: crosshair;
