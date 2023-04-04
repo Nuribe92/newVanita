@@ -329,14 +329,28 @@ hr{
   color: white;
 }
 /*POPULAR PRODUCTS*/
-#popular-products{
-  height: 100vh;
+section{
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+section  img{
+  width: 450px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 2s ease;
+ 
+  flex-wrap: nowrap;
+}
+section img:hover{
+  cursor: crosshair;
+  width: 500px;
+  opacity: 1;
+  filter: contrast(120%);
+  flex-wrap: nowrap;
 }
 
-#popular-products img{
-  width: 400px;
-  height: 300px;
-}
 /*END POPULAR PRODUCTS*/
 
 /*FOOTER*/
