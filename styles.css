@@ -264,15 +264,15 @@ hr{
   visibility: visible;
   color: black;
 }
-#return-top  {
+#return-top, #return-top2 {
   border-radius: 20px !important;
 } 
-#return-top {
+#return-top, #return-top2 {
   color:#d6249e;
   font-size: 25px;
 }
 
-#return-top:hover{
+#return-top:hover, #return-top2:hover{
   background-color:#a40060 ;
   color: white;
   border: 1px solid #a40060;
@@ -342,7 +342,16 @@ hr{
 #moretutorials > button:hover > p{
   color: white;
 }
+/*POPULAR PRODUCTS*/
+#popular-products{
+  height: 100vh;
+}
 
+#popular-products img{
+  width: 400px;
+  height: 300px;
+}
+/*END POPULAR PRODUCTS*/
 
 /*FOOTER*/
 #footer {
