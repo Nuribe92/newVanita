@@ -1,0 +1,8 @@
+#container{
+    height: 100vh;
+    display: flex;
+}
+.products{
+    width: 250px;
+    height: 250px;
+}
