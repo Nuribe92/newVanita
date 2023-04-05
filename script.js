@@ -5,7 +5,7 @@ let stockProducts = [
         precio: 15000,
         descripcion: "xxx1",
         cantidad: 1,
-        img: 'img\ContornoCupcake-removebg-preview.png'
+        img: './img/metodosdepago.png'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ let stockProducts = [
         precio: 6000,
         descripcion: "xxx2",
         cantidad: 1,
-        img: 'img\correctoYTratamiento-removebg-preview.png'
+        img: './img/correctoYTratamiento-removebg-preview.png'
     },
     {
         id: 3,
@@ -80,20 +80,23 @@ let stockProducts = [
         img: '../static/imgvid/kitDeCejas.jpg'
     }
 ]
-
+let main = document.getElementById("container");
 function showProducts(){
-    let main = document.getElementById("container");
-
+    
     let html = "";
     stockProducts.forEach(product => {
         html += `
         <div class="products">
-        <img src="${product.img}" alt="${product.nombre}"
+        <img src="${product.img}" alt="${product.nombre}">
         <p>${product.descripcion}</p>
         <span class="precio">$${product.precio.toFixed(2)}</span>
         <button class="button-buy">Comprar</button>
         </div>
-        `
-    })
+        `;
+        main.appendChild(html)
+    });
     main.innerHTML = html;
+}
+window.onload = function(){
+    showProducts();
 }
