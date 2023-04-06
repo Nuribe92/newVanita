@@ -3,7 +3,7 @@ let stockProducts = [
         id: 1,
         nombre: "Rubor y labial velvet beauty Glazed",
         precio: 15000,
-        descripcion: "rthnrtnrstnsrtnsrtnsrtnstnsrtnsrtnsrtnsrtnrtnsrnrstnftnsrg-transparent juntas de la siguiente manera:",
+        descripcion: "transparent juntas de la siguiente manera:",
         cantidad: 1,
         img: './img/lapizDeCejas-removebg-preview.png'
     },
@@ -88,14 +88,14 @@ function showProducts(){
         const div = document.createElement("div")
         div.classList.add('products')
         div.innerHTML = `
-        <div class="card bg-transparent">
+        <div class="card bg-transparent border-dark">
         <img class="card-img-top" src="${product.img}" alt="${product.nombre}">
         <div class="card-body">
         <h5 class="card-title">${product.nombre}</h5>
         <p class="card-text">${product.descripcion}</p>
         <span class="precio">$${product.precio.toFixed(2)}</span>
         </div>
-        <div class="card-footer">
+        <div class="card-footer border-dark">
         <a class="btn btn-light">Comprar</a>
         </div>
         </div>
