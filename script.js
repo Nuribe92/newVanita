@@ -100,11 +100,10 @@ function showProducts(){
         </div>
         </div>
       `;
-      console.log("is working1")
-        container.appendChild(div)
+      container.appendChild(div)
 
     });
-    console.log("is working");
+    
 }
 showProducts();
 
