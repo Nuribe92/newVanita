@@ -222,9 +222,8 @@ nav div ul li a:hover {
 aside {
   justify-content: right;
   border: 10px 0px;
-  padding-right: -10px;
   position: fixed;
-  left: 98%;
+  left: 99%;
   z-index: 4;
 }
 #insta {
