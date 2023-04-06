@@ -3,7 +3,7 @@ let stockProducts = [
         id: 1,
         nombre: "Rubor y labial velvet beauty Glazed",
         precio: 15000,
-        descripcion: "xxx1",
+        descripcion: "rthnrtnrstnsrtnsrtnsrtnstnsrtnsrtnsrtnsrtnrtnsrnrstnftnsrg-transparent juntas de la siguiente manera:",
         cantidad: 1,
         img: './img/lapizDeCejas-removebg-preview.png'
     },
@@ -82,20 +82,33 @@ let stockProducts = [
 ];
 
 const container = document.getElementById("container");
+
 function showProducts(){
     stockProducts.forEach(product => {
-        const div = document.createElement('div')
+        const div = document.createElement("div")
         div.classList.add('products')
         div.innerHTML = `
-        <img src="${product.img}" alt="${product.nombre}">
-        <p>${product.descripcion}</p>
+        <div class="card bg-transparent">
+        <img class="card-img-top" src="${product.img}" alt="${product.nombre}">
+        <div class="card-body">
+        <h5 class="card-title">${product.nombre}</h5>
+        <p class="card-text">${product.descripcion}</p>
         <span class="precio">$${product.precio.toFixed(2)}</span>
-        <button class="button-buy">Comprar</button>
+        </div>
+        <div class="card-footer">
+        <a class="btn btn-light">Comprar</a>
+        </div>
+        </div>
       `;
       console.log("is working1")
         container.appendChild(div)
+
     });
     console.log("is working");
 }
+showProducts();
 
-showProducts()
+window.addEventListener("load", function() {
+    // Código a ejecutar cuando la página ha terminado de cargarse
+  });
+  
