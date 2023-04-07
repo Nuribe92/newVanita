@@ -40,7 +40,7 @@
 /*END CARDS*/
 /*DISCOUNTS*/
 #descuentos{
-    height: auto;
+    height: 100vh;
 }
 .discProducts{
     width: 100%;
@@ -49,7 +49,7 @@
     align-items: center;
 }
 .discProducts img{
-    height: 550px;
+    height: 500px;
     width: auto;
     object-fit: contain;
 }
