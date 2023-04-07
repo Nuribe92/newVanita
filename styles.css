@@ -249,7 +249,10 @@ aside {
 hr{
   position: relative;
   color: black;
+  border: none;
+  border-top: 2px solid black;  
 }
+
 #return-top, #return-top2 {
   border-radius: 20px !important;
 } 
@@ -346,7 +349,7 @@ section img:hover{
   cursor: crosshair;
   width: 500px;
   opacity: 1;
-  filter: contrast(120%);
+  filter: contrast(150%);
   flex-wrap: nowrap;
 }
 

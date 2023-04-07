@@ -82,6 +82,11 @@ let stockProducts = [
 ];
 
 const container = document.getElementById("container");
+const firstProductDiscount = document.getElementById("discount1")
+const secondProductDiscount = document.getElementById("discount2")
+
+
+
 
 function showProducts(){
     stockProducts.forEach(product => {
@@ -110,4 +115,9 @@ showProducts();
 window.addEventListener("load", function() {
     // Código a ejecutar cuando la página ha terminado de cargarse
   });
-  
+  let idOfProfuct1 = 1;
+  let idOfProduct2 = 2;
+
+  function addDiscount(){
+        let id1 = ""  
+  }
