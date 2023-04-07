@@ -1,3 +1,4 @@
+/*CARDS*/
 #container{
     height: auto;
     display: flex;
@@ -36,3 +37,28 @@
 .card-body h5{
     text-align: center;
 }
+/*END CARDS*/
+/*DISCOUNTS*/
+#descuentos{
+    height: auto;
+}
+.discProducts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discProducts img{
+    height: 550px;
+    width: auto;
+    object-fit: contain;
+}
+.discProducts a{
+    border: 1px solid 
+}
+
+.discProducts .card-body{
+    background-color: rgb(214,36,158,0.5);
+}
+/*END DISCOUNTS*/
+

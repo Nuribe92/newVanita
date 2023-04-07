@@ -94,15 +94,15 @@ function showProducts(){
         div.classList.add('products')
         div.innerHTML = `
         <div class="card bg-transparent border-dark">
-        <img class="card-img-top" src="${product.img}" alt="${product.nombre}">
-        <div class="card-body">
-        <h5 class="card-title">${product.nombre}</h5>
-        <p class="card-text">${product.descripcion}</p>
-        <span class="precio">$${product.precio.toFixed(2)}</span>
-        </div>
-        <div class="card-footer border-dark">
-        <a class="btn btn-light">Comprar</a>
-        </div>
+            <img class="card-img-top" src="${product.img}" alt="${product.nombre}">
+            <div class="card-body">
+                <h5 class="card-title">${product.nombre}</h5>
+                <p class="card-text">${product.descripcion}</p>
+                <span class="precio">$${product.precio.toFixed(2)}</span>
+            </div>
+            <div class="card-footer border-dark">
+                <a class="btn btn-light">Comprar</a>
+            </div>
         </div>
       `;
       container.appendChild(div)
@@ -115,9 +115,32 @@ showProducts();
 window.addEventListener("load", function() {
     // Código a ejecutar cuando la página ha terminado de cargarse
   });
-  let idOfProfuct1 = 1;
-  let idOfProduct2 = 2;
+ 
+  function addDiscount(section, id, disc){
+        
+        const discProduct1 = stockProducts.find(product => product.id === id);
+        if(!discProduct1){
+            console.log(`This product does not exits ${id}`);
+        }
+        const discountDiv = document.createElement('div');
+        discountDiv.classList.add('discProducts');
+        discountDiv.innerHTML = `
+            <div class="card bg-transparent border-dark">
+                <h2 class="d-flex text-center justify-content-center">Descuento del ${disc}%</h2><br> 
+                <img class="card-img-top" src="${discProduct1.img}" alt="${discProduct1.nombre}">
+                <div class="card-body">
+                    <h3 class="card-title d-flex justify-content-center">${discProduct1.nombre}</h3>
+                    <h4><span class="precio">Precio Regular: $${discProduct1.precio}</span><h4>
+                    <h4><strong>Precio Actual: $${discProduct1.precio - (disc/100) * discProduct1.precio}</strong></h4>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-light d-block text-center">Comprar</a>
+                </div>
+            </div>
+        `
+        section.appendChild(discountDiv)
 
-  function addDiscount(){
-        let id1 = ""  
   }
+//funcion descuentos (SECCION, ID, DESCUENTO)
+  addDiscount(firstProductDiscount, 7, 10)
+  addDiscount(secondProductDiscount, 10, 15)

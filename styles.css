@@ -253,15 +253,15 @@ hr{
   border-top: 2px solid black;  
 }
 
-#return-top, #return-top2 {
+#return-top, #return-top2, #products-return, #discount-return{
   border-radius: 20px !important;
 } 
-#return-top, #return-top2 {
+#return-top, #return-top2, #products-return, #discount-return{
   color:#d6249e;
   font-size: 25px;
 }
 
-#return-top:hover, #return-top2:hover{
+#return-top:hover, #return-top2:hover, #products-return:hover, #discount-return:hover{
   background-color:#a40060 ;
   color: white;
   border: 1px solid #a40060;
