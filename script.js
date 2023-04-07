@@ -1,3 +1,4 @@
+//ARRAY OF PRODUCTS
 let stockProducts = [
     {
         id: 1,
@@ -80,14 +81,17 @@ let stockProducts = [
         img: 'img/imagenesProductos/kitDeCejas-removebg-preview.png'
     }
 ];
+//END OF ARRAY OF PRODUCTS
 
+
+//GLOBLAL VARIABLE
 const container = document.getElementById("container");
 const firstProductDiscount = document.getElementById("discount1")
 const secondProductDiscount = document.getElementById("discount2")
 
+//END OF GLOBAL VARIABLE
 
-
-
+//ADDING ALL PRODUCTS OF CATALOG
 function showProducts(){
     stockProducts.forEach(product => {
         const div = document.createElement("div")
@@ -111,12 +115,10 @@ function showProducts(){
     
 }
 showProducts();
+//END ADDING PRODUCTS OF CATALOG
 
-window.addEventListener("load", function() {
-    // Código a ejecutar cuando la página ha terminado de cargarse
-  });
- 
-  function addDiscount(section, id, disc){
+//ADDING 2 PRODUCTS FOR DISCOUNT
+function addDiscount(section, id, disc){
         
         const discProduct1 = stockProducts.find(product => product.id === id);
         if(!discProduct1){
@@ -144,3 +146,5 @@ window.addEventListener("load", function() {
 //funcion descuentos (SECCION, ID, DESCUENTO)
   addDiscount(firstProductDiscount, 7, 10)
   addDiscount(secondProductDiscount, 10, 15)
+
+//END ADDING 2 PRODUCTS FOR DISCOUNT
