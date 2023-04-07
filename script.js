@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function(){ 
+
+    const observer = new IntersectionObserver((entries) =>{
+        entries.forEach((entry) =>{
+            console.log(entry)
+            if(entry.isIntersecting){
+                entry.target.classList.add('show');
+            }else{
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+    
+    
+    document.querySelectorAll('.hidden').forEach((el) => {observer.observe(el)
+    });
+    });
 //ARRAY OF PRODUCTS
 let stockProducts = [
     {
@@ -148,3 +165,4 @@ function addDiscount(section, id, disc){
   addDiscount(secondProductDiscount, 10, 15)
 
 //END ADDING 2 PRODUCTS FOR DISCOUNT
+
