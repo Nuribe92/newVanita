@@ -398,14 +398,14 @@ section img:hover{
 .hidden{
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
+    transform: translateY(40%);
     transition: all 2s;
 }
 
 .show{
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 /* .logo:nth-child(0){
