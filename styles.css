@@ -253,15 +253,15 @@ hr{
   border-top: 2px solid black;  
 }
 
-#return-top, #return-top2, #products-return, #discount-return{
+#return-top, #return-top2, #products-return, #discount-return ,#kits-return{
   border-radius: 20px !important;
 } 
-#return-top, #return-top2, #products-return, #discount-return{
+#return-top, #return-top2, #products-return, #discount-return, #kits-return{
   color:#d6249e;
   font-size: 25px;
 }
 
-#return-top:hover, #return-top2:hover, #products-return:hover, #discount-return:hover{
+#return-top:hover, #return-top2:hover, #products-return:hover, #discount-return:hover, #kits-return:hover{
   background-color:#a40060 ;
   color: white;
   border: 1px solid #a40060;
@@ -423,3 +423,9 @@ section img:hover{
 
 
 /*END VISIBILITY ANIMATION*/
+
+/*START KITS*/
+#kits{
+  height: 100vh;
+}
+/*END KITS*/
