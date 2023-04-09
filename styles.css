@@ -298,6 +298,7 @@ hr{
   justify-content: end;
   align-items: center;
   z-index: 1;
+  text-decoration: none;
 }
 
 #moretutorials > button {
@@ -315,7 +316,6 @@ hr{
 
 #moretutorials > button > p {
   color:#d6249e;
-  font-weight: bold;
   align-self: center;
   margin: auto;
   font-size: 30px;
