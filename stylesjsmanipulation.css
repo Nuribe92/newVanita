@@ -7,9 +7,8 @@
     justify-content: space-between;
 }
 #shopping-car-button{
-    position: fixed;
-    margin-left: 10px;
-    left:96.7%;
+    /* position: fixed; */
+    margin-left: 35px;
     width: 7px;
     height: 30px;
     border-radius: 50%;
@@ -18,20 +17,23 @@
     cursor: pointer;
 }
  #shopping-car{
-    position: absolute;
+    /* position: absolute;
     top:40%;
-    left:-80%;
+    left:-80%; */
     object-fit: contain; 
     height: 65px;
     z-index: 1;
+    margin-top: -20px;
 } 
 #shopping-counter{
-    position: absolute;
-    top:20%;
-    left:35%;
+    position: relative;
     font-size: larger;
     font-weight: bolder;
     z-index: 2;
+    margin-left: 15px;
+}
+#shopping-car-button:focus{
+    outline: none;
 }
 .products{
     width: 400px;
