@@ -6,6 +6,33 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#shopping-car-button{
+    position: fixed;
+    margin-left: 10px;
+    left:96.7%;
+    width: 7px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+ #shopping-car{
+    position: absolute;
+    top:40%;
+    left:-80%;
+    object-fit: contain; 
+    height: 65px;
+    z-index: 1;
+} 
+#shopping-counter{
+    position: absolute;
+    top:20%;
+    left:35%;
+    font-size: larger;
+    font-weight: bolder;
+    z-index: 2;
+}
 .products{
     width: 400px;
     height: 550px;
