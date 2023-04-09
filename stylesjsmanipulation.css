@@ -37,7 +37,7 @@
 }
 .products{
     width: 400px;
-    height: 550px;
+    height: auto;
     z-index: 1;
     margin-bottom: 10px;
     overflow: hidden;
@@ -61,6 +61,7 @@
 }
 .card-body{
     background-color: rgb(214,36,158,0.5);
+    height:max-content;
 }
 
 .card-body h5{
@@ -69,7 +70,7 @@
 /*END CARDS*/
 /*DISCOUNTS*/
 #descuentos{
-    height: 100vh;
+   
 }
 .discProducts{
     width: 100%;

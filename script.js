@@ -273,7 +273,7 @@ function showProducts(){
             <div class="card-body">
                 <h5 class="card-title">${product.nombre}</h5>
                 <p class="card-text text-justify">${product.descripcion}</p>
-                <span class="precio">$${product.precio.toFixed(2)}</span>
+                <span class="precio"><strong>$${product.precio.toFixed(2)}</strong></span>
             </div>
             <div class="card-footer border-dark">
                 <a class="btn btn-light">Comprar</a>
