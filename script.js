@@ -255,12 +255,12 @@ let stockProducts = [
 //END OF ARRAY OF PRODUCTS
 
 
-//GLOBLAL VARIABLE
+//GLOBLAL constIABLE
 const container = document.getElementById("container");
 const firstProductDiscount = document.getElementById("discount1")
 const secondProductDiscount = document.getElementById("discount2")
 
-//END OF GLOBAL VARIABLE
+//END OF GLOBAL constIABLE
 
 //ADDING ALL PRODUCTS OF CATALOG
 function showProducts(){
@@ -276,7 +276,7 @@ function showProducts(){
                 <span class="precio"><strong>$${product.precio.toFixed(2)}</strong></span>
             </div>
             <div class="card-footer border-dark">
-                <a class="btn btn-light">Comprar</a>
+                <a class="btn btn-light buy">Comprar</a>
             </div>
         </div>
       `;
@@ -319,4 +319,16 @@ function addDiscount(section, id, disc){
   addDiscount(secondProductDiscount, 10, 15)
 
 //END ADDING 2 PRODUCTS FOR DISCOUNT
+
+//START SHOPPING CAR
+const shoppingCar = []
+const buy = document.getElementsByClassName('buy') 
+
+buy.addEventListener('click', (event) => {
+    shoppingCar.push()
+})
+
+
+
+//END SHOPPING CAR
 
