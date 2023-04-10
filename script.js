@@ -257,8 +257,11 @@ let stockProducts = [
 
 //GLOBLAL constIABLE
 const container = document.getElementById("container");
-const firstProductDiscount = document.getElementById("discount1")
-const secondProductDiscount = document.getElementById("discount2")
+const firstProductDiscount = document.getElementById("discount1");
+const secondProductDiscount = document.getElementById("discount2");
+const contenidoCarrito = document.getElementById('contenido-carrito');
+const contadorCarrito = document.getElementById('shopping-counter');
+const precioTotal = document.getElementById('precioTotal');
 
 //END OF GLOBAL constIABLE
 
@@ -328,6 +331,29 @@ buy.addEventListener('click', (event) => {
     shoppingCar.push()
 })
 
+const agregarAlCarrito = (prod.id) => {
+
+}
+
+//funcion para actualizar el carrito cada vez que se agrega un producto
+const actualizarCarrito = () =>{
+    contenidoCarrito.innerHTML = "";
+    shoppingCar.forEach((prod) => {
+        const div = document.createElement('div')
+        div.classList.add('prodInCar')
+        div.innerHTML = `
+            <img src="${prod.img}" alt="${prod.nombre}">
+            <p>${prod.nombre}</p>
+            <p> Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+            <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        `
+        contenidoCarrito.appendChild('div')
+        localStorage.setItem('shoppingCar', JSON.stringify(shoppingCar))
+
+    })
+    contadorCarrito.innerHTML = shoppingCar.length;
+    precioTotal.innerHTML = shoppingCar.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+}
 
 
 //END SHOPPING CAR

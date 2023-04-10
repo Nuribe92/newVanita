@@ -91,7 +91,7 @@
 /*END DISCOUNTS*/
 /*START MODAL*/
 #modal-carrito {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -104,7 +104,8 @@
   }
   
   .modal-contenido {
-    background-color: #fefefe;
+    background-color: rgb(214,36,158,1);
+    border-radius: 8px;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
