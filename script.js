@@ -329,11 +329,11 @@ const buy = document.getElementsByClassName('buy')
 
 buy.addEventListener('click', (event) => {
     shoppingCar.push()
-})
+});
 
-const agregarAlCarrito = (prod.id) => {
+// const agregarAlCarrito = (prod.id) =>{
 
-}
+// };
 
 //funcion para actualizar el carrito cada vez que se agrega un producto
 const actualizarCarrito = () =>{
@@ -358,3 +358,6 @@ const actualizarCarrito = () =>{
 
 //END SHOPPING CAR
 
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })

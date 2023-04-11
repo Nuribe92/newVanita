@@ -51,8 +51,8 @@
               </form>
             </div>
           </nav>    
-       <!--END OF NAVBAR-->       
-          <!--SOCIAL MEDIA ICONS-->
+       <!--END OF NAVBAR-->  
+       <!--SOCIAL MEDIA ICONS-->
           <div>
               <aside id="insta" onclick="instaLink()" class="icons">
                 <img src="./img\instagram.png" class="icon icon--instagram" alt="intagram">
@@ -78,9 +78,9 @@
             <div class="row d-flex mr-5 ml-5">
               <div class="col-12 d-flex ">
                 <h1 class="col-11 mb-4 title">PRODUCTOS</h1> 
-                <button id="shopping-car-button" class="col-1 d-flex flex-column justify-content-center align-items-center " id="shopping-car-button">
+                <button type="button" id="shopping-car-button" data-target=".bd-example-modal-lg" data-toggle="modal" class="col-1 border-none d-flex flex-column justify-content-center align-items-center " id="shopping-car-button">
                   <span id="shopping-counter" class="mt-4">0</span>
-                  <img id="shopping-car"  src="/img/carrito.png">
+                  <img id="shopping-car" class="btn"  src="/img/carrito.png">
                 </button>
               </div>
               <div id="container" class="card-group col-12">
@@ -136,23 +136,19 @@
           <!--END KITS-->
           <!--START MODAL-->
           
-            <div id="modal-carrito">          
-              <div class="modal-contenido">
-                <span id="cerrarCarrito" class="modal-cerrar"><img src="img/cerrar-40.png"></span>
-                <h2><i>Carrito de compras</i></h2>
-                <hr>
-                <div id="contenido-carrito">
-
-
+            
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="row"></div>
+                <h2 class="col-11"><i>Carrito de compras</i></h2>
+                <span id="cerrarCarrito" class="col-1"><img src="img/cerrar-40.png"></span>
+                <div class="modal-content">
+                  ...
                 </div>
                 <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
                 <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
               </div>
             </div>
-          
-          
-
-          </div>
           <!--END MODAL-->
            <!--FOOTER-->
           <div id="contact" class="container-fluid  m-1 ">
