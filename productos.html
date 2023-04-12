@@ -1,18 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stylesjsmanipulation.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesjsmanipulation.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <title>Vanita Beauty & Makeup</title>
-    <link rel="icon" type="icon" href="./img/vanita insumo-positivo.png">
+    <link rel="icon" type="icon" href="./img/vanita insumo-positivo.png" />
   </head>
-  <body >
+  <body>
+    <!--START MODAL-->
+
+    <!-- <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-xl">
+        <div class="row"></div>
+        <h2 class="col-11"><i>Carrito de compras</i></h2>
+        <span id="cerrarCarrito" class="col-1" data-dismiss="modal" aria-label="close">
+          <img src="img/cerrar-40.png"/>
+        </span>
+        <div class="modal-content">...</div>
+        
+        <p class="precioProducto">
+          Precio Total: $<span id="precioTotal">0</span>
+        </p>
+        <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
+      </div>
+      
+    </div> -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--END MODAL-->
     <!--BACKGROUND ANIMATION-->
     <ul class="background">
       <li></li>
@@ -20,183 +80,239 @@
       <li></li>
       <li></li>
       <li></li>
-      <li></li>     
-   </ul>
-   <!-- END BACKGROUND ANIMATION-->
+      <li></li>
+    </ul>
+    <!-- END BACKGROUND ANIMATION-->
     <!--NAVBAR WITH THE LOGO-->
-           <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-            <img id="logo" src="./img/vanita_negativo.png" class="navbar-brand" href="#">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#descuentos">Descuentos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#kits">Kits</a>
-                </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contactanos</a>
-                </li>
-                </ul>
-              <form id="search" class=" row form-inline my-2 my-lg-0 mr-5">
-                <input class="form-control mr-sm-2 " type="search" placeholder="¿Que estas buscando?" aria-label="Search">
-                <button class="btn my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>    
-       <!--END OF NAVBAR-->  
-       <!--SOCIAL MEDIA ICONS-->
-          <div>
-              <aside id="insta" onclick="instaLink()" class="icons">
-                <img src="./img\instagram.png" class="icon icon--instagram" alt="intagram">
-                    <i class="ri-instagram-line"></i>
-                </a>
-            </aside>
-            <aside id="meta" class="icons">
-                <img src="./img/meta.png" class="icon icon--meta" alt="meta">
-                    <i class="ri-meta-line"></i>
-                </a>
-            </aside>
-            <aside id="whatsapp" onclick="whatsappLink()" class="icons">
-                <img src="./img/whatsapp.png" class="icon icon--whatsapp" alt="whatsapp">
-                    <i class="ri-whatsapp-line"></i>
-                </a>
-            </aside>
-            </div>
-          <!-- END SOCIAL MEDIA ICONS-->
-          <hr>
-          <!--MAIN PART OF THE PAGE-->
-          
-          <div class="container-fluid">
-            <div class="row d-flex mr-5 ml-5">
-              <div class="col-12 d-flex ">
-                <h1 class="col-11 mb-4 title">PRODUCTOS</h1> 
-                <button type="button" id="shopping-car-button" data-target=".bd-example-modal-lg" data-toggle="modal" class="col-1 border-none d-flex flex-column justify-content-center align-items-center " id="shopping-car-button">
-                  <span id="shopping-counter" class="mt-4">0</span>
-                  <img id="shopping-car" class="btn"  src="/img/carrito.png">
-                </button>
-              </div>
-              <div id="container" class="card-group col-12">
-                
-              </div>
-            </div>
-            <div class="row">
-              <a id="products-return" class=" btn btn-light mx-auto col-4 mb-5 " href="#nav">Ir a inicio</button></a>
-            </div>
-          </div>
-          
-          <hr>
-          <!--END OF MAIN PART-->
-          <!--DISCOUNT-->
-          <div id="descuentos" class="container-fluid hidden">
-            <div class="row">
-              <div class="col-12 d-flex mb-3 ml-5">
-                <h1 class="col-11 d-flex hidden title">DESCUENTOS</h1>
-              </div>
-              <div id="discount1" class="col-6 ">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light">
+      <img
+        id="logo"
+        src="./img/vanita_negativo.png"
+        class="navbar-brand"
+        href="#"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-              </div>
-              <div id="discount2" class="col-6 hidden">
-                
-              </div>
-            </div>
-            <div class="row mt-2 ">
-              <a id="discount-return" class=" btn btn-light mx-auto col-4 mt-3 mb-1" href="#nav">Ir a inicio</button></a>
-            </div>
-          </div>
-          <!--END DISCOUNTS-->
-          <hr>
-          <!--START KITS-->
-            <div id="kits" class="container-fluid">
-              <div class="row">
-                <div class="col-9 d-flex ml-5">
-                  <h1 class="ml-5 title">KITS</h1>
-                </div>
-                <div id="kit1" class="col-4 ">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#descuentos">Descuentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kits">Kits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contactanos</a>
+          </li>
+        </ul>
+        <form id="search" class="row form-inline my-2 my-lg-0 mr-5">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="¿Que estas buscando?"
+            aria-label="Search"
+          />
+          <button class="btn my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!--END OF NAVBAR-->
+    <!--SOCIAL MEDIA ICONS-->
+    <div>
+      <aside id="insta" onclick="instaLink()" class="icons">
+        <img
+          src="./img\instagram.png"
+          class="icon icon--instagram"
+          alt="intagram"
+        />
+        <i class="ri-instagram-line"></i>
+      </aside>
+      <aside id="meta" class="icons">
+        <img src="./img/meta.png" class="icon icon--meta" alt="meta" />
+        <i class="ri-meta-line"></i>
+      </aside>
+      <aside id="whatsapp" onclick="whatsappLink()" class="icons">
+        <img
+          src="./img/whatsapp.png"
+          class="icon icon--whatsapp"
+          alt="whatsapp"
+        />
+        <i class="ri-whatsapp-line"></i>
+      </aside>
+    </div>
+    <!-- END SOCIAL MEDIA ICONS-->
+    <hr />
+    <!--MAIN PART OF THE PAGE-->
 
-                </div>
-                <div id="kit2" class="col-4 ">
-                  
-                </div>
-                <div id="kit3" class="col-4 ">
-                  
-                </div>
-              </div>
-              <div class="row">
-                <a id="kits-return" class=" btn btn-light mx-auto col-4 mt-3 mb-5" href="#nav">Ir a inicio</button></a>
-              </div>
-            </div>
-          <!--END KITS-->
-          <!--START MODAL-->
-          
-            
-            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="row"></div>
-                <h2 class="col-11"><i>Carrito de compras</i></h2>
-                <span id="cerrarCarrito" class="col-1"><img src="img/cerrar-40.png"></span>
-                <div class="modal-content">
-                  ...
-                </div>
-                <p class="precioProducto">Precio Total: $<span id="precioTotal">0</span></p>
-                <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
-              </div>
-            </div>
-          <!--END MODAL-->
-           <!--FOOTER-->
-          <div id="contact" class="container-fluid  m-1 ">
-            <div class="row">
-            <div id="footer" class="col-12">
-                <img class="" id="lupa" src="./img/lupa-b.png" alt="lupa">
-                <svg id="clipboard" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check col-4" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
-                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
-                </svg>
-                <svg id="bank" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bank col-4" viewBox="0 0 16 16">
-                  <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
-                </svg>
-            </div>
-            <div id="footerbody" class="row col-12 m-0 p-0">
-              <div class="border col-4 text-center">
-                <h2 class="pb-2">¿Que buscas?</h2>
-                <ul>
-                  <li>Descuentos</li>
-                  <li>Kits</li>
-                  <li>Productos populares</li>
-                </ul>
-              </div>
-              <div class="border col-4 text-center"><div>
-                <h2 class="pb-2">Contactanos</h2>
-                <ul>
-                  <li>Whatsapp</li>
-                  <li>Facebook</li>
-                  <li>Instagram</li>
-                </ul>
-              </div>
-            </div>
-              
-              <div class="border col-4 text-center">
-                <h2 class="pb-2">Metodos de pago</h2>
-                <img src="./img/metodosdepago.png" alt="formasdepago">
-              </div>
-            </div>
-          </div>           
+    <div class="container-fluid">
+      <div class="row d-flex mr-5 ml-5">
+        <div class="col-12 d-flex">
+          <h1 class="col-11 mb-4 title">PRODUCTOS</h1>
+          <!--Button carrito para abrir modal-->
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            class="col-1 border-none d-flex flex-column justify-content-center align-items-center"
+            id="shopping-car-button"
+          >
+            <span id="shopping-counter" class="mt-4">0</span>
+            <img id="shopping-car" class="btn" src="/img/carrito.png" />
+          </button>
+          <!--Button carrito para abrir modal-->
+        </div>
+        <div id="container" class="card-group col-12"></div>
+      </div>
+      <div class="row">
+        <a
+          id="products-return"
+          class="btn btn-light mx-auto col-4 mb-5"
+          href="#nav"
+          >Ir a inicio</a
+        >
+      </div>
+    </div>
+
+    <hr />
+    <!--END OF MAIN PART-->
+    <!--DISCOUNT-->
+    <div id="descuentos" class="container-fluid hidden">
+      <div class="row">
+        <div class="col-12 d-flex mb-3 ml-5">
+          <h1 class="col-11 d-flex hidden title">DESCUENTOS</h1>
+        </div>
+        <div id="discount1" class="col-6"></div>
+        <div id="discount2" class="col-6 hidden"></div>
+      </div>
+      <div class="row mt-2">
+        <a
+          id="discount-return"
+          class="btn btn-light mx-auto col-4 mt-3 mb-1"
+          href="#nav"
+          >Ir a inicio</a
+        >
+      </div>
+    </div>
+    <!--END DISCOUNTS-->
+    <hr />
+    <!--START KITS-->
+    <div id="kits" class="container-fluid">
+      <div class="row">
+        <div class="col-9 d-flex ml-5">
+          <h1 class="ml-5 title">KITS</h1>
+        </div>
+        <div id="kit1" class="col-4"></div>
+        <div id="kit2" class="col-4"></div>
+        <div id="kit3" class="col-4"></div>
+      </div>
+      <div class="row">
+        <a
+          id="kits-return"
+          class="btn btn-light mx-auto col-4 mt-3 mb-5"
+          href="#nav"
+          >Ir a inicio</a
+        >
+      </div>
+    </div>
+    <!--END KITS-->
+    <!--FOOTER-->
+    <div id="contact" class="container-fluid m-1">
+      <div class="row">
+        <div id="footer" class="col-12">
+          <img class="" id="lupa" src="./img/lupa-b.png" alt="lupa" />
+          <svg
+            id="clipboard"
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-clipboard-check col-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
+            />
+            <path
+              d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
+            />
+          </svg>
+          <svg
+            id="bank"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-bank col-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"
+            />
+          </svg>
+        </div>
+        <div id="footerbody" class="row col-12 m-0 p-0">
+          <div class="border col-4 text-center">
+            <h2 class="pb-2">¿Que buscas?</h2>
+            <ul>
+              <li>Descuentos</li>
+              <li>Kits</li>
+              <li>Productos populares</li>
+            </ul>
           </div>
-          <!--FOOTER-->
+          <div class="border col-4 text-center">
+            <div>
+              <h2 class="pb-2">Contactanos</h2>
+              <ul>
+                <li>Whatsapp</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border col-4 text-center">
+            <h2 class="pb-2">Metodos de pago</h2>
+            <img src="./img/metodosdepago.png" alt="formasdepago" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="modal.js"></script>
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

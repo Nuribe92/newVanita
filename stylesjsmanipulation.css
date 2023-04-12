@@ -93,16 +93,11 @@
 }
 /*END DISCOUNTS*/
 /*START MODAL*/
-.modal{
-    position: relative;
-    margin: auto auto;
-    height: 50%;
-    width: 50%;
+/* .modal{
     background-color:rgb(214,36,158,1) ;
-    border-radius: 50px;
-}
-.modal-dialog{
-    width: 90% !important;
-}
+    
+} */
+
+
   
 /*END MODAL*/
