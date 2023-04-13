@@ -23,23 +23,27 @@
   <body>
     <!--START MODAL-->
 
-    <!-- <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-      <div class="modal-dialog modal-xl">
-        <div class="row"></div>
+    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg">
+        <div class="row mb-2">
         <h2 class="col-11"><i>Carrito de compras</i></h2>
-        <span id="cerrarCarrito" class="col-1" data-dismiss="modal" aria-label="close">
-          <img src="img/cerrar-40.png"/>
+        <span id="cerrarCarrito" class="col-1 close" data-dismiss="modal" aria-label="close" aria-hidden="true">
+          <img id="shopping-car-close" src="img/cerrar-40.png"/>
         </span>
+        </div>
+        <hr>
         <div class="modal-content">...</div>
-        
-        <p class="precioProducto">
+        <div class="row">
+        <button class="col-7 boton-agregar">Comprar</button>  
+        <p class="col-4 ml-3 my-auto precioProducto ">
           Precio Total: $<span id="precioTotal">0</span>
         </p>
+      </div>
         <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
       </div>
       
-    </div> -->
-    <div
+    </div>
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -70,7 +74,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!--END MODAL-->
     <!--BACKGROUND ANIMATION-->
@@ -166,8 +170,8 @@
           <!--Button carrito para abrir modal-->
           <button
             type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-toggle="modal"
+            data-target=".bd-example-modal-lg"
             class="col-1 border-none d-flex flex-column justify-content-center align-items-center"
             id="shopping-car-button"
           >
