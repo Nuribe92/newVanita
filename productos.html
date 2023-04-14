@@ -23,58 +23,34 @@
   <body>
     <!--START MODAL-->
 
-    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-      <div class="modal-dialog modal-lg">
+    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+      <div id="#modalDialog" class="modal-dialog modal-lg">
         <div class="row mb-2">
         <h2 class="col-11"><i>Carrito de compras</i></h2>
-        <span id="cerrarCarrito" class="col-1 close" data-dismiss="modal" aria-label="close" aria-hidden="true">
+        <span id="cerrarCarrito" class="col-1" data-dismiss="modal" aria-label="close" aria-hidden="true">
           <img id="shopping-car-close" src="img/cerrar-40.png"/>
         </span>
         </div>
         <hr>
-        <div class="modal-content">...</div>
+        <div id="modalContent" class="modal-content">
+
+
+        </div>
+        <hr>
         <div class="row">
-        <button class="col-7 boton-agregar">Comprar</button>  
-        <p class="col-4 my-auto mx-auto text-center precioProducto ">
-          Precio Total: $<span id="precioTotal">0</span>
+        <button class="col-2 mx-auto boton-agregar">Comprar</button>  
+        <p class="col-4 my-auto mx-auto text-center precioProducto">
+          Precio Total: $<span id="precioTotal"><strong>0</strong></span>
         </p>
       </div>
-        <button id="vaciar-carrito" class="boton-agregar">Vaciar Carrito</button>
+      <hr>
+      <div class="row">
+        <button id="vaciar-carrito" class="mx-auto boton-agregar">Vaciar Carrito</button>
+      </div> 
       </div>
       
     </div>
-    <!-- <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    
 
     <!--END MODAL-->
     <!--BACKGROUND ANIMATION-->
