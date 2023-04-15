@@ -253,18 +253,18 @@ hr{
   border-top: 2px solid black;  
 }
 
-#return-top, #return-top2, #products-return, #discount-return ,#kits-return, #buttonInCar, #vaciar-carrito{
+#return-top, #return-top2, #products-return, #discount-return ,#kits-return, #buttonInCar, #vaciar-carrito, #buyButton{
   border-radius: 20px !important;
 } 
-#return-top, #return-top2, #products-return, #discount-return, #kits-return, #buttonInCar, #vaciar-carrito{
+#return-top, #return-top2, #products-return, #discount-return, #kits-return, #buttonInCar, #vaciar-carrito, #buyButton{
   color:#d6249e;
-  font-size: 25px;
+  font-size: 18px;
 }
 
-#return-top:hover, #return-top2:hover, #products-return:hover, #discount-return:hover, #kits-return:hover, #buttonInCar:hover, #vaciar-carrito:hover{
+#return-top:hover, #return-top2:hover, #products-return:hover, #discount-return:hover, #kits-return:hover, #buttonInCar:hover, #vaciar-carrito:hover, #buyButton:hover{
   background-color:#a40060 ;
   color: white;
-  border: 1px solid #a40060;
+  border: 2px solid #a40060;
   cursor: pointer;
 }
 

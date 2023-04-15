@@ -369,7 +369,7 @@ const actualizarCarrito = () => {
     const div = document.createElement("div");
     div.classList.add("prodInCar");
     div.innerHTML = `
-        <div class="row d-flex">
+      <div class="row d-flex">
         
         <img id="imgInCar" class="col-3 p-0" src="${prod.img}" alt="${prod.nombre}">
         <p class="col-2 justify-content-center my-auto p-0">${prod.nombre}</p>
