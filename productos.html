@@ -23,11 +23,11 @@
   <body>
     <!--START MODAL-->
 
-    <div id="myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+    <div id="myModal" class="modal fade bd-example-modal-lg"  tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
       <div id="#modalDialog" class="modal-dialog modal-lg">
         <div class="row mb-2">
         <h2 class="col-11"><i>Carrito de compras</i></h2>
-        <span id="cerrarCarrito" class="col-1" data-dismiss="modal" aria-label="close" aria-hidden="true">
+        <span id="cerrarCarrito" type="button" class="col-1" data-dismiss="modal" aria-label="close">
           <img id="shopping-car-close" src="img/cerrar-40.png"/>
         </span>
         </div>
@@ -40,7 +40,7 @@
         <div class="row">
         <button class="col-2 mx-auto boton-agregar">Comprar</button>  
         <p class="col-4 my-auto mx-auto text-center precioProducto">
-          Precio Total: $<span id="precioTotal"><strong>0</strong></span>
+          <strong>Precio Total: $<span id="precioTotal">0</span></strong>
         </p>
       </div>
       <hr>
@@ -50,6 +50,8 @@
       </div>
       
     </div>
+    
+
     
 
     <!--END MODAL-->
@@ -294,5 +296,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
