@@ -413,11 +413,10 @@ const removeProductFromCar = (prodId) => {
   setTimeout(() => {
     const item = shoppingCar.find((prod) => prod.id === prodId);
     const index = shoppingCar.indexOf(item);
-    const element = document.getElementById(`item-${prodId}`);
-    element.classList.add("fadeOut"); 
+    
     shoppingCar.splice(index, 1);
     actualizarCarrito();
-  }, 1500);
+  }, 1000);
 };
 
 //END SHOPPING CAR
