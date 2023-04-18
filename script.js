@@ -312,11 +312,11 @@ function showProducts() {
       `;
     container.appendChild(div);
 
-    const boton = document.getElementById(`add${product.id}`)
+    const boton = document.getElementById(`add${product.id}`);
 
-    boton.addEventListener('click', () =>{
-        addToCar(product.id)
-    })
+    boton.addEventListener("click", () => {
+      addToCar(product.id);
+    });
   });
 }
 showProducts();
@@ -405,18 +405,20 @@ const addToCar = (prodId) => {
     const item = stockProducts.find((prod) => prod.id === prodId);
     shoppingCar.push(item);
   }
-  actualizarCarrito()
+  actualizarCarrito();
 };
 
 const removeProductFromCar = (prodId) => {
-  const item = shoppingCar.find((prod) => prod.id === prodId)
-  const index = shoppingCar.indexOf(item);
-   setTimeout(() => {
-    shoppingCar.splice(index, 1)
-  }, 2000)
-  console.log(item)
-  actualizarCarrito()
-}
+  console.log(shoppingCar)
+  setTimeout(() => {
+    const item = shoppingCar.find((prod) => prod.id === prodId);
+    const index = shoppingCar.indexOf(item);
+    const element = document.getElementById(`item-${prodId}`);
+    element.classList.add("fadeOut"); 
+    shoppingCar.splice(index, 1);
+    actualizarCarrito();
+  }, 1500);
+};
 
 //END SHOPPING CAR
 

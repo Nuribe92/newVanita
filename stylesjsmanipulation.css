@@ -134,8 +134,8 @@
 
 /*END MODAL*/
 
-.fade-out{
-    animation: fadeOut 2s;
+.fadeOut{
+    animation: fadeOut 1.5s;
     opacity: 0;
 }
 @keyframes fadeOut {
