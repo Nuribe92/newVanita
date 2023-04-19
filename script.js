@@ -380,8 +380,8 @@ const actualizarCarrito = () => {
       </svg></button>
         
         </div>
-        <hr>
-    `;
+        
+    `;    
     contenidoCarrito.appendChild(div);
     //localStorage.setItem("shoppingCar", JSON.stringify(shoppingCar));
   });
@@ -409,15 +409,15 @@ const addToCar = (prodId) => {
 };
 
 const removeProductFromCar = (prodId) => {
-    const item = shoppingCar.find((prod) => prod.id === prodId);
-    const index = shoppingCar.indexOf(item);
-    const buttonDelete = document.getElementsByClassName('boton-eliminar')[0];
-    const fatherDiv = buttonDelete.parentElement;
-    fatherDiv.classList.toggle('fadeOut')
-    console.log(buttonDelete)
-    console.log(item)
-    console.log(index)
-    console.log(fatherDiv)
+  const item = shoppingCar.find((prod) => prod.id === prodId);
+  const index = shoppingCar.indexOf(item);
+  const buttonDelete = document.getElementsByClassName("boton-eliminar")[0];
+  const fatherDiv = buttonDelete.parentElement;
+  fatherDiv.classList.toggle("fadeOut");
+  console.log(buttonDelete);
+  console.log(item);
+  console.log(index);
+  console.log(fatherDiv);
   setTimeout(() => {
     shoppingCar.splice(index, 1);
     actualizarCarrito();
