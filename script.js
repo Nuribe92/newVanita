@@ -383,7 +383,7 @@ const actualizarCarrito = () => {
         
     `;    
     contenidoCarrito.appendChild(div);
-    //localStorage.setItem("shoppingCar", JSON.stringify(shoppingCar));
+    localStorage.setItem("shoppingCar", JSON.stringify(shoppingCar));
   });
   contadorCarrito.innerHTML = shoppingCar.length;
   precioTotal.innerHTML = shoppingCar.reduce(
@@ -423,6 +423,18 @@ const removeProductFromCar = (prodId) => {
     actualizarCarrito();
   }, 1000);
 };
+
+
+  const empty = document.getElementById('vaciar-carrito');
+  empty.addEventListener('click', () =>{
+    contenidoCarrito.classList.toggle('fadeOut')
+    setTimeout(() => {
+    shoppingCar.length = 0
+    actualizarCarrito()
+    contenidoCarrito.classList.remove('fadeOut')
+    },1000)
+  })
+
 
 //END SHOPPING CAR
 
