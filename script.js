@@ -411,7 +411,7 @@ const addToCar = (prodId) => {
 const removeProductFromCar = (prodId) => {
   const item = shoppingCar.find((prod) => prod.id === prodId);
   const index = shoppingCar.indexOf(item);
-  const buttonDelete = document.getElementsByClassName("boton-eliminar")[0];
+  const buttonDelete = document.getElementsByClassName("boton-eliminar")[index];
   const fatherDiv = buttonDelete.parentElement;
   fatherDiv.classList.toggle("fadeOut");
   console.log(buttonDelete);
