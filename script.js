@@ -375,7 +375,7 @@ const actualizarCarrito = () => {
         <p class="col-2 justify-content-center my-auto p-0">${prod.nombre}</p>
         <h5 class="col-2 mx-auto my-auto p-0">Precio Unitario: $${prod.precio}</h5>
         <p class="col-2 mx-auto my-auto p-0"> Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-        <button id="buttonInCar" onclick="removeProductFromCar(${prod.id})" class="col-1 my-auto mr-5 p-0 boton-eliminar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+        <button onclick="removeProductFromCar(${prod.id})" class="col-1 my-auto mr-5 p-0 boton-eliminar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
         <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
       </svg></button>
         
@@ -409,11 +409,16 @@ const addToCar = (prodId) => {
 };
 
 const removeProductFromCar = (prodId) => {
-  console.log(shoppingCar)
-  setTimeout(() => {
     const item = shoppingCar.find((prod) => prod.id === prodId);
     const index = shoppingCar.indexOf(item);
-    
+    const buttonDelete = document.getElementsByClassName('boton-eliminar')[0];
+    const fatherDiv = buttonDelete.parentElement;
+    fatherDiv.classList.toggle('fadeOut')
+    console.log(buttonDelete)
+    console.log(item)
+    console.log(index)
+    console.log(fatherDiv)
+  setTimeout(() => {
     shoppingCar.splice(index, 1);
     actualizarCarrito();
   }, 1000);
