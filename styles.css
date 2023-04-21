@@ -112,6 +112,9 @@ nav div ul li a {
 nav div ul li a:hover {
   transform: scale(1.5);
 }
+#dropdown{
+  z-index: 3;
+}
 #dropdown a:hover {
   transform: scale(1);
   background-color: #be91acc4 !important;
@@ -126,6 +129,7 @@ nav div ul li a:hover {
 /*CAROUSEL*/
 #carouselExampleIndicators {
   height: 82vh;
+  z-index: 1;
 }
 #carousel {
   margin-top: 20px;
